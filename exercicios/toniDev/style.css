@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonteLogo';
+    src: url(_fonts/bubblegum-sans-regular.otf);
+}
+
+body {
+    background-image: url(imagens/fundoaço.jpg);
+}
+header#cabecalho {
+    background-image: url(imagens/matrix.jpg);
+    color: rgb(234, 229, 228);
+    text-shadow: 2px 2px 2px rgb(25, 24, 24);
+    margin-top: -5px;
+    border-bottom: 1px solid #01f622;
+
+}
+header#cabecalho img#skils {
+    position: relative;
+    left: 780px;
+    top: -60px;
+}
+
+                /* Corpo do site */
+hgroup#p-corpo {
+    position: relative;
+    margin-top: 50px;
+    text-align: justify;
+    text-indent: 40px;
+    }
+div#interface {
+    background-color: beige;
+    height: 550px;
+    width: 900px; 
+    margin: auto; 
+    box-shadow: 0px 0px 10px rgb(43, 255, 0);
+    padding: 5px;
+}
+
+                /* Imagens com legenda */
+figure.foto-legenda{
+    width: 400px;
+    right: 20px;
+    position: relative;
+    border: 5px solid gray;
+    box-shadow: 1px 1px 3px black;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: gold;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 1.5s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+                        /* Habilidades */
+
+nav#habilidades ul{
+    position: relative;
+    margin-top: -25px;
+}
+nav#habilidades h3{
+    font-family: 'fonteLogo';
+    position: relative;
+    margin-top: -300px;
+    left: 482px;
+    color: rgb(0, 255, 89);
+    background-color: rgb(11, 11, 14);
+    box-shadow: 0px 0px 5px rgb(239, 2, 2);
+    padding: 5px;
+    width: 412px;
+    text-align: center;
+}
+nav#habilidades li {
+    font-family: 'fonteLogo';
+    position: relative;
+    display: inline-block;
+    left: 440px;
+    margin-top: 35px;
+    background-color: rgb(83, 101, 95);
+    padding: 5px 10px 5px 10px;
+    transition: 1s;
+}
+nav#habilidades li:hover {
+    background-color: cadetblue;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+/* Section */
+section#sec {
+    display: block;
+    width: 400px;
+    border-right: 1px solid;
+    padding-right: 58px;
+
+}
+aside#lateral {
+    position: relative;
+    display: block;
+    left: 500px;
+    margin-top: -430px;
+}
+
+footer{
+    display: block;
+    width: 300px;
+    box-shadow: 1px 1px 1px red;
+}
