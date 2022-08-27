@@ -1,6 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 
+/* 
+Fontes internas entram em conflito com fontes externas, case se usar os 2 tipos, usar um tipo diferente em cada camada de estilo. 
+
+Tipos de format()
+- opentype (otf)
+-truetype (ttf)
+embed-opentype
+truetype-aat (Apple Advanced Typography)
+svg
+*/
+body {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    text-justify: auto;
+    line-height: 2;
+}
 h1 {
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Rubik Maze', cursive;
+    font-weight: 600;
+}
+h2 {
+    font-family: 'got';
+    font-size: 2em;
+}
+h3 {
+    font-family: 'Teko' ,sans-serif;
+    font-size: 2em;
+}
+h4 {
+    font-family: 'car';
+    font-size: 2em;
+}
+h1.ultimo {
+    font-family: 'poster';
+}
+p {
+    font-family: 'Nothing You Could Do', cursive;
+    margin-bottom: 3em;
+}
+
+body > section {
+    background-color: lightgray;
+    color: white;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.299);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section > h2, h4 {
+    color: rgba(0, 0, 0, 0.596);
+    text-decoration: underline;
+}
+section > p {
+    background-color: rgba(0, 0, 0, 0.443);
+    text-shadow: 1px 1px 0px black;
+}
+section.img {
+    background-image: url(../imagens/manha.jpg);
+}
+section.img2 {
+    background-image: url(../imagens/noite.jpg);
+    background-position: center center;
 }
