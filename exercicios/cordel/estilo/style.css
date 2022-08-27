@@ -1,5 +1,5 @@
 @charset "UTF-08";
-@import url('https://fonts.googleapis.com/css2? family= Kaushan+Script & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
     margin: 0px;
@@ -40,7 +40,8 @@ section {
     padding-left: 30px;
 }
 section > p {
-    font-family: 'Kaushan Script', cursiva, sans-serif;
+    font-family: 'Dancing Script';
+    font-size: larger;
     padding-bottom: 2em;
     padding-left: 10px;
 }
