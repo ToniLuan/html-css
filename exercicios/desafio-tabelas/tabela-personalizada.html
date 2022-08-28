@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Tabela</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 80px;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        table td.grupo {
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            text-decoration: underline;
+            font-size: larger;
+        }
+        table td.destaque {
+            font-size: large;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Desafio Tabela 01</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Desafio Tabela 02</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">M</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Desafio tabela 03</caption>
+        <tr>
+            <td class="grupo">Grupo</td>
+            <td class="destaque">Nomes</td>
+            <td class="destaque" colspan="3">Filmes</td>
+        </tr>
+        <tr>
+            <td class="destaque" rowspan="3">Mulheres</td>
+            <td>Flozinha</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Lindinha</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Docinho</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <td class="destaque" rowspan="3">Homens</td>
+            <td>Receba</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td>Melhor</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Siiii</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>     
+    </table>
+</body>
+</html>
