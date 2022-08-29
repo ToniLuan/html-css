@@ -5,20 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicíos de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        col.cnome {
+            background-color: aqua;
+        }
+        col.cgrup {
+            background-color: yellow;
+        }
+        col.cprof {
+            background-color: lightcoral;
+        }
+    </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrup" span="2">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Idade</th>
-            <th>Profissão</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
         </tr>
         <tr>
             <td>Boladona</td>
             <td>F</td>
-            
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Shereka</td>
+            <td>T</td>
+            <td>29</td>
+            <td>Assustadora</td>
+        </tr>
+        <tr>
+            <td>Mandrake</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Furtador</td>
+        </tr>
+        <tr>
+            <td>Nazaré</td>
+            <td>F</td>
+            <td>56</td>
+            <td>Empurradora</td>
+        </tr>
+        <tr>
+            <td>Shablau</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Gangster</td>
+        </tr>
+        <tr>
+            <td>Monark</td>
+            <td>T</td>
+            <td>24</td>
+            <td>Falar Merda</td>
         </tr>
     </table>
 </body>
